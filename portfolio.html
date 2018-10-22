@@ -1,19 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment #2</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style>
-        .outline {
-            border: 1px solid blue;
+        /* Remove the navbar's default margin-bottom and rounded borders */
+
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
         }
 
-        * {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+        .row.content {
+            height: 450px
+        }
+
+        /* Set gray background color and 100% height */
+
+        .sidenav {
+            padding-top: 20px;
+            /* background-color: #f1f1f1; */
+            height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+
+        footer {
+            background-color: #666666;
+            color: #fff;
+            padding: 15px;
+            border-top: 8px solid #4aaaa5;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 50px;
+            }
+            .row.content {
+                height: auto;
+                padding: 50px;
+            }
         }
 
         body {
@@ -24,24 +60,27 @@
             color: #777;
             padding-bottom: 70px;
         }
-        
-            
 
+        .center {
+            background: #fff;
+        }
 
-
+        img {
+            padding: 25px;
+        }
     </style>
 </head>
 
-<>
-    <nav class="navbar outline">
-        <div class="container outline">
-            <div class="navbar-header outline">
-                <a class="navbar-brand outline lead bg-primary" href="index.html">Michael Todd</a>
-            </div>
-            <div class="collapse navbar-collapse outline" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right outline">
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Michael Todd</a>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html" class="btn btn-group">About</a>
+                        <a href="index.html">About</a>
                     </li>
                     <li>
                         <a href="portfolio.html">Portfolio</a>
@@ -54,87 +93,70 @@
         </div>
     </nav>
 
-    
- 
-
-                 <!-- Main Container-Portfolio  could possibly use media objects-->
-                 <!-- could use 2 list groups side by side inside of a row   -->
-        <div id="main-container" class="container outline">
-            <section class="main-section outline"><h1 class="outline">Portfolio</h1>
-                                        
-
-                <div class="row outline">
-                    <div class="col-md-6 outline">
-                        <div class="thumbnail outline">
-                            <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/t/5a1f6014e4966bb1ff1ae598/1512004117666/?format=1500w"
-                            class="col-md-6 outine" alt="image01">
-                        <div class="caption"></div>
-                            <h3 class="outline">image01</h3>
-                            <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59b9d0559f7456c35c5e1749/59c1c7d5c534a55b61a708b6/1512005652127/dusk.jpg?format=1000w"
-                                class="col-md-6 outline" alt="image02">
-                           <h3 class="outline">image02</h3>
-                            </div>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/t/5a1f6014e4966bb1ff1ae598/1512004117666/?format=1500w" class="img-responsive" style="width:100%" alt="Image">
                     </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="thumbnail">
-                            <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59b9d0559f7456c35c5e1749/59c1c873e45a7c7c14bedc98/1512005652139/Cam_Entrance.jpg?format=1000w"
-                            class="col-md-6" alt="image01">
-                            <div class="caption"></div>
-                            <h3>image03</h3>
-                            <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59b9d0559f7456c35c5e1749/5a1e27e04192021369a0e930/1512005652156/Beirut.jpg?format=1000w"
-                                class="col-md-6" alt="image04">
-                            <div class="caption"></div>
-                                <h3>image04</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="thumbnail">
-                            <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59b9d0559f7456c35c5e1749/5a1f56e8ec212d3c97f57175/1512005652332/112-2.jpg?format=1000w"
-                            class="col-md-6" alt="image01">
-                            <div class="caption"></div>
-                            <h3>image5</h3>
-                            <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59c1ca5fbe42d6fb8438e89d/59c1ca6df9a61e9f48032237/1505872527133/CAM_012.jpg?format=1000w"
-                                class="col-md-6" alt="image02">
-                            <div class="caption"></div>
-                                <h3>image06</h3>
+                    <div class="panel-footer">image 01</div>
                 </div>
-        </div>
-    </div>
-
-            <!-- sidebar -->
-        <div class="row"></div>
-            <div class="col-md-4 outline">
-                <section class="sidebar outline">
-                    <div class="connect col-md-12 outline ">
-                        <h2>Connect With Me</h2>
-                        <div class=" btn btn-group">
-                            <img src="images/if_git-social-media-logo_2220701.png" class="social col-md-4 outline" alt="Github">
-                            <img src="images/if_LinkedIn-social-media-logo_2220673.png" class="social col-md-4 outline" alt="LinkedIn">
-                            <img src="images/if_17-social-media-logo_2220662.png" class="social col-md-4 outline" alt="Contact-info">
-                        </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-danger">
+                    <div class="panel-body">
+                        <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59b9d0559f7456c35c5e1749/59c1c7d5c534a55b61a708b6/1512005652127/dusk.jpg?format=1000w" class="img-responsive" style="width:100%" alt="Image">
                     </div>
-                </section>
+                    <div class="panel-footer">Image 02</div>
+                </div>
             </div>
         </div>
     </div>
-
-    <br>
-    <br>
-
-    <!-- Footer -->
-
-        <div class="container-fluid">
-            <div class="footer outline">
-                <h5>&copy; Copyright 2017 Michael Todd</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59b9d0559f7456c35c5e1749/59c1c873e45a7c7c14bedc98/1512005652139/Cam_Entrance.jpg?format=1000w" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Image 03</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59b9d0559f7456c35c5e1749/5a1e27e04192021369a0e930/1512005652156/Beirut.jpg?format=1000w" class="img-responsive" style="width:100%" alt="Image">
+                    </div>
+                    <div class="panel-footer">Image 04</div>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59b9d0559f7456c35c5e1749/5a1f56e8ec212d3c97f57175/1512005652332/112-2.jpg?format=1000w" class="img-responsive" style="width:100%" alt="Image">
+                </div>
+                <div class="panel-footer">Image 05</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <img src="https://static1.squarespace.com/static/59b9cf47be42d6f8491a68ea/59c1ca5fbe42d6fb8438e89d/59c1ca6df9a61e9f48032237/1505872527133/CAM_012.jpg?format=1000w" class="img-responsive" style="width:100%" alt="Image">
+                </div>
+                <div class="panel-footer">Image 06</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="container-fluid text-center">
+        <p>&copy;2017 Copyright Michael Todd</p>
+    </footer>
 
+</body>
 
 </html>

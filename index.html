@@ -1,89 +1,120 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
-    <head>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Assignment #2</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <style>
-            /* .outline {
-                border: 1px solid blue;
-            } */
+        .row.content {
+            height: 450px
+        }
 
-                * {
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    }
-            body { 
-                padding-bottom: 70px;
-                     }
-        </style>
-    </head>
+        .sidenav {
+            padding-top: 20px;
+            height: 100%;
+        }
 
-    <body>
-        <nav class="navbar outline">
-            <div class="container outline">
-                <div class="navbar-header outline">
-                    <a class="navbar-brand outline lead bg-primary" href="index.html">Michael Todd</a>
-                </div>
-                <div class="collapse navbar-collapse outline" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right outline">
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+        footer {
+            background-color: #666666;
+            color: #fff;
+            padding: 15px;
+            border-top: 8px solid #4aaaa5;
+        }
+
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 50px;
+            }
+            .row.content {
+                height: auto;
+                padding: 50px;
+            }
+        }
+            body {
+                background-image: url('images/concrete_seamless.png');
+                font-size: 18px;
+                line-height: 34px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #777;
+                padding-bottom: 70px;   
+            }
+            .center {
+                background: #fff;
+            }
+            img {
+                padding: 25px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="w3.html">Michael Todd</a>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                   
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                   <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="outline"><h2>About Me</h2>
-                </div>                             
-                    
-                    <div class="col-md-2 outline">
-                    </div>
-                    <div class="col-md-4 outline float-left">
-                            <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4NDUzMjk5NF5BMl5BanBnXkFtZTYwNjY2NDQ2._V1_UY317_CR13,0,214,317_AL_.jpg" alt="Placeholder" class="pull-left">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat
-                                        libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam
-                                        commodo, est ac auctor ornare, eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean
-                                        quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis
-                                        et in lorem. Nunc id nisi et neque fringilla ultricies. Aenean at feugiat elit, a posuere justo.
-                                        Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta
-                                        purus, id posuere sem congue a.
-                                    </p>
-                                </div>
+        </div>
+    </nav>
 
-                                        <!-- sidebar -->
-                                <div class="col-md-4 outline">
-                                    <section class="sidebar outline">
-                                        <div class="connect col-md-12 outline ">
-                                            <h2>Connect With Me</h2>
-                                            <div class=" btn btn-group">
-                                                <img src="images/if_git-social-media-logo_2220701.png" class="social col-md-4 outline" alt="Github">
-                                                <img src="images/if_LinkedIn-social-media-logo_2220673.png" class="social col-md-4 outline" alt="LinkedIn">
-                                                <img src="images/if_17-social-media-logo_2220662.png" class="social col-md-4 outline" alt="Contact-info">
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-                            </div>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-1 sidenav"></div>
+            <div class="center col-sm-5 text-left">
+                <h1>About Me</h1>
+                <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4NDUzMjk5NF5BMl5BanBnXkFtZTYwNjY2NDQ2._V1_UY317_CR13,0,214,317_AL_.jpg" alt="Placeholder" class="pull-left">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat
+                        libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam
+                        commodo, est ac auctor ornare, eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean
+                        quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis
+                        et in lorem. Nunc id nisi et neque fringilla ultricies. Aenean at feugiat elit, a posuere justo.
+                        Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta
+                        purus, id posuere sem congue a.
+                    </p>
+            </div>
+                <div class="col-sm-4 col-sm-offset-0 sidenav">
+                    <div class="well">
+                        <h3>Connect With Me</h3>
+                        <div class="btn btn-group">
+                            <img src="images/if_git-social-media-logo_2220701.png" class="col-sm-4 outline" alt="Github">
+                            <img src="images/if_LinkedIn-social-media-logo_2220673.png" class="col-sm-4 outline" alt="LinkedIn">
+                            <img src="images/if_17-social-media-logo_2220662.png" class="col-sm-4 outline" alt="Contact-info">
                         </div>
-                                
-            <br>
-            
-            <!-- Footer -->
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="footer outline">
-                    <h5>&copy; Copyright 2017 Michael Todd</h5>
                     </div>
                 </div>
             </div>
-   </body>
+        </div>
+    
 
+    <footer class="container-fluid text-center">
+        <p>&copy;2017 Copyright Michael Todd</p>
+    </footer>
+
+</body>
 
 </html>
